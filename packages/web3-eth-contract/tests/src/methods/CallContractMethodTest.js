@@ -59,6 +59,6 @@ describe('CallContractMethodTest', () => {
 
         expect(callContractMethod.afterExecution('0x0')).toEqual('0x0');
 
-        expect(abiCoderMock.decodeParameter).toHaveBeenCalledWith('bytes', '0x0');
+        expect(abiCoderMock.decodeParameter).toHaveBeenCalledWith({name: 'result', type: 'bytes'}, '0x0');
     });
 });
