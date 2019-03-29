@@ -46,8 +46,18 @@ export default class Web3 extends AbstractWeb3Module {
         this.eth = new Eth(this.currentProvider, net, options);
         this.shh = new Shh(this.currentProvider, net, options);
         this.bzz = new Bzz(this.currentProvider);
-        this.utils = Utils;
         this.version = version;
+    }
+
+    /**
+     * Gets the utils property
+     *
+     * @property utils
+     *
+     * @returns {Object} Utility functions for Ethereum dapps
+     */
+    static get utils() {
+        return Utils;
     }
 
     /**
