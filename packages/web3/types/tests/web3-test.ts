@@ -37,7 +37,7 @@ Web3.providers;
 web3.currentProvider;
 
 // $ExpectType Utils
-web3.utils;
+Web3.utils;
 
 // $ExpectType string
 web3.version;
